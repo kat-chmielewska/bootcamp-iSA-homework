@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" type="text/CSS" />
+    <!--Fonts Import-->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <title>Task 2 - Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="line1"></div>
+      <div class="text">
+        <h2>Skontaktuj się z nami!</h2>
+            <p> Wypełnij poniższy formularz, a nasz konsultant odezwie się do Ciebie.</p>
+      <form class="form-class" action="#" method="post">
+        <ul>
+          <li>
+            <label for="fname">Imię i nazwisko:</label><br />
+            <input
+              class="field"
+              type="text"
+              placeholder="Tu wpisz swoje imię i nazwisko"
+            />
+          </li>
+          <li>
+            <label for="email" >Email:</label><br />
+            <input
+              class="field"
+              type="email"
+              name="user_email"
+              placeholder="Tu wpisz swój adres email"
+            />
+          </li>
+          <li>
+            <label for="msg">Wiadomość:</label><br />
+            <textarea class="field-text" name="user_message" placeholder="Tu wpisz swoją wiadomość">
+</textarea
+            >
+          </li>
+          <li>
+            <button type="submit" class="button">Wyślij wiadomość</button>
+          </li>
+        </ul>
+      </form>
+      <div class="line2"></div>
+    </div>
+  </body>
+</html>
