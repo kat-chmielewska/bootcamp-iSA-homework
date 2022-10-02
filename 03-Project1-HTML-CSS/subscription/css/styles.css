@@ -4,9 +4,11 @@
   /* --- Colors --- */
   --Primary-Cyan: hsl(179, 62%, 43%);
   --Primary-Bright-Yellow: hsl(71, 73%, 54%);
+  --Secoundary-Light-Cyan: hsl(179, 61%, 75%);
   --Neutral-Light-Gray: hsl(204, 43%, 93%);
   --Neutral-Grayish-Blue: hsl(218, 22%, 67%);
   --Background-Light-Grey: #e6eff6;
+  --Background-Box-White: #fff;
 
   /* --- Typography --- */
   --Body-Font-Size: 16px;
@@ -19,7 +21,6 @@
   background-color: var(--Background-Light-Grey);
   font-family: "Karla", sans-serif;
 }
-/* -------------------------------------------------- */
 
 /* ----------- Container Styles ------------- */
 .container {
@@ -28,4 +29,19 @@
   padding: 16px;
 }
 
-/* -------------------------------------------------- */
+/* ----------- Row Styles ------------- */
+
+.row_1 {
+  background-color: var(--Background-Box-White);
+}
+.row_2 {
+  display: inline-flex;
+}
+/* ----------- Column Styles ------------- */
+.column_1 {
+  background-color: var(--Primary-Cyan);
+}
+
+.column_2 {
+  background-color: var(--Secoundary-Light-Cyan);
+}
