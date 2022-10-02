@@ -2,11 +2,14 @@
 
 :root {
   /* --- Colors --- */
-  --Primary-Cyan: hsl(179, 62%, 43%);
-  --Primary-Bright-Yellow: hsl(71, 73%, 54%);
+  --Primary-Cyan: #2bb3b1;
+  --Primary-Bright-Yellow: #bfdf32;
   --Secoundary-Light-Cyan: #4abebd;
+  --Secoundary-Dark-Cyan: #0c7f7d;
   --Secoundary-Bright-Cyan: #74d6df;
-  --Neutral-Light-Gray: hsl(204, 43%, 93%);
+  --Secoundary-Yellow: #8ba80d;
+  --Secoundary-Grey: #73808d;
+  --Neutral-Light-Gray: #e6eff6;
   --Neutral-Grayish-Blue: #a0a3aa;
   --Background-Light-Grey: #e6eff6;
   --Background-Box-White: #fff;
@@ -38,7 +41,7 @@ body {
   height: auto;
   grid-template-columns: 100%;
   grid-template-rows: 220px auto;
-  margin: auto auto;
+  margin: 100px auto 0px auto;
   justify-content: center;
   box-shadow: 10px 10px 20px var(--Container-Shadow);
 }
@@ -46,18 +49,20 @@ body {
 /* ----------- Row Styles ------------- */
 
 .row_1 {
+  height: 220px;
   background-color: var(--Background-Box-White);
   border-radius: 10px 10px 0px 0px;
-  padding: 50px;
+  padding: 45px;
 }
 .row_2 {
   display: inline-flex;
+  height: 260px;
 }
 
 /* ----------- Column Styles ------------- */
 .column_1 {
   background-color: var(--Primary-Cyan);
-  padding: 50px;
+  padding: 35px 45px;
   border-radius: 0px 0px 0px 10px;
   color: var(--Background-Box-White);
   width: 50%;
@@ -65,7 +70,7 @@ body {
 
 .column_2 {
   background-color: var(--Secoundary-Light-Cyan);
-  padding: 50px;
+  padding: 35px 45px;
   border-radius: 0px 0px 10px 0px;
   color: var(--Background-Box-White);
   width: 50%;
@@ -133,8 +138,14 @@ li {
 
 /* ----------- Footer ------------- */
 .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+  font-size: 11px;
+  text-align: center;
+  color: var(--Secoundary-Grey);
+}
+.attribution a {
+  color: var(--Secoundary-Yellow);
+}
+
+.attribution a:hover {
+  color: var(--Secoundary-Dark-Cyan);
+}
