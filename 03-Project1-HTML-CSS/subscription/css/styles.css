@@ -5,17 +5,20 @@
   --Primary-Cyan: hsl(179, 62%, 43%);
   --Primary-Bright-Yellow: hsl(71, 73%, 54%);
   --Secoundary-Light-Cyan: #4abebd;
+  --Secoundary-Bright-Cyan: #74d6df;
   --Neutral-Light-Gray: hsl(204, 43%, 93%);
   --Neutral-Grayish-Blue: #a0a3aa;
   --Background-Light-Grey: #e6eff6;
   --Background-Box-White: #fff;
+  --Container-Shadow: #cadbeb;
+  --Button-Shadow: #25a3a2;
 
   /* --- Typography --- */
   --Body-Font-Size: 14px;
   --Header1-Font-Size: 24px;
   --Header2-Font-Size: 20px;
   --Button-Font-Size: 14px;
-  --Price-Font-Size: 48px;
+  --Price-Font-Size: 32px;
 
   /* --- CSS Style --- */
   font-family: "Karla", sans-serif;
@@ -37,6 +40,7 @@ body {
   grid-template-rows: 220px auto;
   margin: auto auto;
   justify-content: center;
+  box-shadow: 10px 10px 20px var(--Container-Shadow);
 }
 
 /* ----------- Row Styles ------------- */
@@ -85,6 +89,7 @@ h2 {
 p {
   font-size: var(--Body-Font-Size);
   font-weight: 200;
+  margin-bottom: 12px;
 }
 
 li {
@@ -95,8 +100,41 @@ li {
 .row_1__sub-title {
   color: var(--Primary-Bright-Yellow);
   margin-bottom: 16px;
+  font-weight: bold;
 }
 
 .row_1__paragraph {
   color: var(--Neutral-Grayish-Blue);
+  font-weight: 300;
 }
+
+.column_1__price {
+  font-size: var(--Price-Font-Size);
+  font-weight: bold;
+}
+
+.column_1__price-color {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ----------- Button ------------- */
+.row_2__button {
+  width: 240px;
+  height: 50px;
+  border: 1px solid #4f9d47;
+  border-radius: 5px;
+  background-color: var(--Primary-Bright-Yellow);
+  font-size: var(--Button-Font-Size);
+  font-weight: bold;
+  margin: 18px 0px;
+  color: var(--Background-Box-White);
+  box-shadow: 10px 10px 15px var(--Button-Shadow);
+}
+
+/* ----------- Footer ------------- */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
