@@ -18,13 +18,18 @@
   --Price-Font-Size: 48px;
 
   /* --- CSS Style --- */
-  background-color: var(--Background-Light-Grey);
   font-family: "Karla", sans-serif;
+}
+
+/* ----------- General Styles ------------- */
+body {
+  background-color: var(--Background-Light-Grey);
+  width: 1440px;
 }
 
 /* ----------- Container Styles ------------- */
 .container {
-  width: 1440px;
+  width: 640px;
   height: auto;
   padding: 16px;
 }
@@ -33,6 +38,8 @@
 
 .row_1 {
   background-color: var(--Background-Box-White);
+  padding: 50px;
+  border-radius: 10px 10px 0px 0px;
 }
 .row_2 {
   display: inline-flex;
@@ -40,8 +47,12 @@
 /* ----------- Column Styles ------------- */
 .column_1 {
   background-color: var(--Primary-Cyan);
+  padding: 50px;
+  border-radius: 0px 0px 0px 10px;
 }
 
 .column_2 {
   background-color: var(--Secoundary-Light-Cyan);
+  padding: 50px;
+  border-radius: 0px 0px 10px 0px;
 }
