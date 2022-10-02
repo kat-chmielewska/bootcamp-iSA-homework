@@ -1,0 +1,31 @@
+/* ----------- Defining Styles ------------- */
+
+:root {
+  /* --- Colors --- */
+  --Primary-Cyan: hsl(179, 62%, 43%);
+  --Primary-Bright-Yellow: hsl(71, 73%, 54%);
+  --Neutral-Light-Gray: hsl(204, 43%, 93%);
+  --Neutral-Grayish-Blue: hsl(218, 22%, 67%);
+  --Background-Light-Grey: #e6eff6;
+
+  /* --- Typography --- */
+  --Body-Font-Size: 16px;
+  --Header2-Font-Size: 40px;
+  --Header3-Font-Size: 32px;
+  --Button-Font-Size: 14px;
+  --Price-Font-Size: 48px;
+
+  /* --- CSS Style --- */
+  background-color: var(--Background-Light-Grey);
+  font-family: "Karla", sans-serif;
+}
+/* -------------------------------------------------- */
+
+/* ----------- Container Styles ------------- */
+.container {
+  width: 1440px;
+  height: auto;
+  padding: 16px;
+}
+
+/* -------------------------------------------------- */
