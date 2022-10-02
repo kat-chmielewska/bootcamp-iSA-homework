@@ -4,7 +4,7 @@
   /* --- Colors --- */
   --Primary-Cyan: hsl(179, 62%, 43%);
   --Primary-Bright-Yellow: hsl(71, 73%, 54%);
-  --Secoundary-Light-Cyan: hsl(179, 61%, 75%);
+  --Secoundary-Light-Cyan: #4abebd;
   --Neutral-Light-Gray: hsl(204, 43%, 93%);
   --Neutral-Grayish-Blue: hsl(218, 22%, 67%);
   --Background-Light-Grey: #e6eff6;
@@ -12,8 +12,8 @@
 
   /* --- Typography --- */
   --Body-Font-Size: 16px;
-  --Header2-Font-Size: 40px;
-  --Header3-Font-Size: 32px;
+  --Header1-Font-Size: 24px;
+  --Header2-Font-Size: 20px;
   --Button-Font-Size: 14px;
   --Price-Font-Size: 48px;
 
@@ -49,10 +49,29 @@ body {
   background-color: var(--Primary-Cyan);
   padding: 50px;
   border-radius: 0px 0px 0px 10px;
+  color: var(--Background-Box-White);
 }
 
 .column_2 {
   background-color: var(--Secoundary-Light-Cyan);
   padding: 50px;
   border-radius: 0px 0px 10px 0px;
+  color: var(--Background-Box-White);
+}
+
+/* ----------- Typography ------------- */
+
+h1 {
+  font-size: var(--Header1-Font-Size);
+  font-weight: 700;
+  color: var(--Primary-Cyan);
+}
+
+h2 {
+  font-size: var(--Header2-Font-Size);
+  font-weight: 700;
+}
+
+.row_1__sub-title {
+  color: var(--Primary-Bright-Yellow);
 }
