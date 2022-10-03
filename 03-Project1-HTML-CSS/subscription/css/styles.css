@@ -41,7 +41,9 @@ body {
   height: 480px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 100px auto 15px auto;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-bottom: 15px;
   box-shadow: 10px 10px 20px var(--Container-Shadow);
 }
 
@@ -65,6 +67,26 @@ body {
   color: var(--Background-Box-White);
   border-radius: 0px 0px 10px 0px;
   padding: 30px 25px 25px 40px;
+}
+
+.row_1__sub-title {
+  color: var(--Primary-Bright-Yellow);
+  margin-bottom: 16px;
+  font-weight: bold;
+}
+
+.row_1__paragraph {
+  color: var(--Neutral-Grayish-Blue);
+  font-weight: 300;
+}
+
+.row_2__price {
+  font-size: var(--Price-Font-Size);
+  font-weight: bold;
+}
+
+.row_2__price-color {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 /* ----------- Typography ------------- */
@@ -93,26 +115,6 @@ li {
   font-weight: 200;
 }
 
-.row_1__sub-title {
-  color: var(--Primary-Bright-Yellow);
-  margin-bottom: 16px;
-  font-weight: bold;
-}
-
-.row_1__paragraph {
-  color: var(--Neutral-Grayish-Blue);
-  font-weight: 300;
-}
-
-.column_1__price {
-  font-size: var(--Price-Font-Size);
-  font-weight: bold;
-}
-
-.column_1__price-color {
-  color: rgba(255, 255, 255, 0.8);
-}
-
 /* ----------- Button ------------- */
 .row_2__button {
   width: 240px;
@@ -128,9 +130,15 @@ li {
 }
 
 /* ----------- Footer ------------- */
+.footer {
+  width: 640px;
+  height: 100px;
+  margin-left: 50px;
+}
+
 .attribution {
   font-size: 11px;
-  text-align: center;
+
   color: var(--Secoundary-Grey);
 }
 .attribution a {
@@ -139,4 +147,50 @@ li {
 
 .attribution a:hover {
   color: var(--Secoundary-Dark-Cyan);
+}
+
+/* ----------- Mobile ------------- */
+
+@media all and (max-width: 375px) {
+  /* ----------- Container Styles ------------- */
+  main {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    grid-template-rows: 270px 230px 230px;
+  }
+
+  /* ----------- Row Styles ------------- */
+
+  .row_1 {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .row_2 {
+    width: 300px;
+    padding: 20px;
+    border-radius: 0px 0px 0px 0px;
+  }
+
+  .row_3 {
+    width: 300px;
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 10px 10px 20px var(--Container-Shadow);
+  }
+
+  /* ----------- Button ------------- */
+  .row_2__button {
+    width: 260px;
+  }
+
+  /* ----------- Footer ------------- */
+  .footer {
+    width: 300px;
+    margin-left: 20px;
+  }
 }
