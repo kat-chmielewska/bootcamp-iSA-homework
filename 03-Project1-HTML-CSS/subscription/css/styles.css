@@ -38,42 +38,33 @@ body {
 .container {
   display: grid;
   width: 640px;
-  height: auto;
-  grid-template-columns: 100%;
-  grid-template-rows: 220px auto;
-  margin: 100px auto 0px auto;
-  justify-content: center;
+  height: 480px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 100px auto 15px auto;
   box-shadow: 10px 10px 20px var(--Container-Shadow);
 }
 
 /* ----------- Row Styles ------------- */
 
 .row_1 {
-  height: 220px;
+  grid-column: span 2;
   background-color: var(--Background-Box-White);
   border-radius: 10px 10px 0px 0px;
-  padding: 45px;
+  padding: 30px 40px 25px;
 }
 .row_2 {
-  display: inline-flex;
-  height: 260px;
-}
-
-/* ----------- Column Styles ------------- */
-.column_1 {
   background-color: var(--Primary-Cyan);
-  padding: 35px 45px;
-  border-radius: 0px 0px 0px 10px;
   color: var(--Background-Box-White);
-  width: 50%;
+  border-radius: 0px 0px 0px 10px;
+  padding: 30px 40px;
 }
 
-.column_2 {
+.row_3 {
   background-color: var(--Secoundary-Light-Cyan);
-  padding: 35px 45px;
-  border-radius: 0px 0px 10px 0px;
   color: var(--Background-Box-White);
-  width: 50%;
+  border-radius: 0px 0px 10px 0px;
+  padding: 30px 25px 25px 40px;
 }
 
 /* ----------- Typography ------------- */
